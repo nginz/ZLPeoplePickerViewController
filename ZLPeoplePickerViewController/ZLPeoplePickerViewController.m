@@ -88,11 +88,7 @@
     // self.clearsSelectionOnViewWillAppear = NO;
 
     self.navigationItem.title = @"Contacts";
-    self.navigationItem.rightBarButtonItem = [[UIBarButtonItem alloc]
-        initWithBarButtonSystemItem:UIBarButtonSystemItemAdd
-                             target:self
-                             action:@selector(showNewPersonViewController)];
-
+    
     [self refreshControlAction:self.refreshControl];
 
     [[NSNotificationCenter defaultCenter]
